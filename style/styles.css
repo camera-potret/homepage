@@ -438,6 +438,7 @@ body {
 @media (max-width: 768px) {
     .menu-toggle {
         display: flex;
+        order: 3;
     }
 
     .nav-menu {
@@ -467,8 +468,12 @@ body {
     }
 
     .navbar .container {
-        flex-direction: column;
-        gap: 20px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        order: 1;
     }
 
     .hero-content h2 {
