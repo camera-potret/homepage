@@ -96,11 +96,39 @@ body {
 
 /* Hero Section */
 .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
     background: linear-gradient(135deg, var(--primary-color) 0%, #758a00 100%);
     color: var(--white);
-    padding: 100px 20px;
-    text-align: center;
+    padding: 50px 20px;
     margin-bottom: 50px;
+    min-height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-image {
+    flex: 0 0 45%;
+    animation: slideLeft 0.8s ease-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    flex: 0 0 55%;
+    text-align: left;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-content h2 {
@@ -410,6 +438,17 @@ body {
 }
 
 /* Animations */
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @keyframes slideInDown {
     from {
         opacity: 0;
@@ -476,6 +515,22 @@ body {
         order: 1;
     }
 
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+        padding: 40px 20px;
+    }
+
+    .hero-image {
+        flex: 0 0 300px;
+        width: 100%;
+    }
+
+    .hero-content {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
     .hero-content h2 {
         font-size: 36px;
     }
@@ -523,7 +578,16 @@ body {
     }
 
     .hero {
-        padding: 60px 20px;
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .hero-image {
+        flex: 0 0 250px;
+    }
+
+    .hero-content {
+        text-align: center;
     }
 
     .hero-content h2 {
@@ -607,6 +671,10 @@ body {
 @media (max-width: 360px) {
     .navbar-brand .logo {
         height: 35px;
+    }
+
+    .hero-image {
+        flex: 0 0 200px;
     }
 
     .hero-content h2 {
