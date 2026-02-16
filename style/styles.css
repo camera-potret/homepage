@@ -342,6 +342,22 @@ body {
     line-height: 1.6;
 }
 
+.views-counter {
+    font-size: 12px;
+    color: #999;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.views-count {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 /* About Section */
 .about-section {
     padding: 60px 20px;
