@@ -708,5 +708,7 @@ body {
 
 .tolol {
     z-index: -100;
-    display: sticky;
+    display: block;
+    position: sticky;
+    transform: translateY(-2000px);
 }
