@@ -102,7 +102,7 @@ body {
     gap: 40px;
     background: linear-gradient(135deg, var(--primary-color) 0%, #758a00 100%);
     color: var(--white);
-    padding: 50px 20px;
+    padding: 200px 20px;
     margin-bottom: 50px;
     min-height: 500px;
     position: relative;
