@@ -705,3 +705,8 @@ body {
         font-size: 14px;
     }
 }
+
+.tolol {
+    z-index: -100;
+    display: sticky;
+}
